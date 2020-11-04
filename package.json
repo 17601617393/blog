@@ -1,0 +1,17 @@
+{
+  "name": "vuepress-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy-gh": "GH=1 yarn build && bash scripts/deploy-gh.sh"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^1.0.0-rc.1"
+  }
+}
